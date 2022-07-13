@@ -1,7 +1,7 @@
 import { SET_RECENT_POSTS } from "./types";
 import axios from "axios";
 
-export function fetchReactPosts() {
+export function fetchRecentPosts() {
     return function(dispatch) {
         //perform request here
         // console.log("yo! this is working");
