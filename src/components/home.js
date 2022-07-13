@@ -7,6 +7,12 @@ import RecentPosts from "./recentPosts";
 
 
 export default class Home extends Component {
+
+  handleSearchBarSubmit(query) {
+    console.log("handle form Submit query", query);
+    this.props.history.push("/results");
+  }
+  
   render() {
     return (
       <div className='app'>
@@ -14,7 +20,7 @@ export default class Home extends Component {
         <Logo />
        </div>
        <div className='search'>
-        <SearchBar />
+        <SearchBar onSubmit={(query) => this.handleSearchBarSubmit(query)}/>
         <RecentPosts />
        </div>
       </div>
