@@ -1,6 +1,6 @@
 import { 
     SET_RECENT_POSTS,
-    SET_RESULT_POSTS
+    SET_RESULTS_POSTS
  } from "./types";
 
 
@@ -32,12 +32,9 @@ export function fetchPostWithQuery(query) {
         .then( response => {
             console.log("fetchPostWithQuery response", response.data.posts);
             dispatch({
-                type: SET_RESULT_POSTS,
+                type: SET_RESULTS_POSTS,
                 payload: response.data.posts
             })
         })
-        .catch(error => {
-            console.log("error with fetchPostWithQuery", error);
-        });
-    }
+}
 }
