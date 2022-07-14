@@ -13,8 +13,9 @@ class Home extends Component {
 
   handleSearchBarSubmit(query) {
     // console.log("handle form Submit query", query);
-    this.props.fetchPostWithQuery(query);
-    this.props.history.push("/results");
+    this.props.fetchPostWithQuery(query, () => {
+      this.props.history.push("/results");
+    });
   }
   
   render() {
