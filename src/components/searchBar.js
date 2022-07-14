@@ -21,6 +21,10 @@ import { withRouter } from 'react-router';
     return (
     <form className='seach-bar' onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
       <Field name='query' component={this.renderInput}/>
+      <div className='instruct'>
+        <div>Press enter to submit
+          </div>
+        </div>
     </form>
     );
   }
