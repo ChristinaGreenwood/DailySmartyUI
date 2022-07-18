@@ -9,12 +9,9 @@ body {
 
 
 .home {
-    display: grid;
     grid-template: 2fr 2fr 1fr;
-    align-content: space-around;
-    // justify-items: stretch;
-    height: 100vh;
-    width: 66vw;
+    @include default-page-layout();
+
 }
 
 ul {
