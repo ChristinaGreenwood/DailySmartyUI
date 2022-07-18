@@ -11,8 +11,6 @@
         input {
             padding-left: 35px;
             // width: 950px;
-            height: 118px;
-            font-size: 40px;
             background-color: transparent;
             box-shadow: 2px 3px 28px 1px rgba(0, 0, 0, 0.1);
             border: 0px solid transparent;
@@ -35,6 +33,24 @@
             // width: 70em;
             text-align: right;
         }
+    }
+}
+
+.seach-bar__home {
+    align-content: center;
+    justify-items: center;
+   input {
+        height: 118px;
+        font-size: 40px;
+   }
+}
+
+.seach-bar__results {
+    align-content: flex-start;
+    justify-items: center;
+    input {
+        font-size: 22px;
+        height: 36px;
     }
 }
     
