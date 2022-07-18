@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Field, reduxForm } from 'redux-form';
 
+
 import { withRouter } from 'react-router';
 
                                         
@@ -11,7 +12,7 @@ import { withRouter } from 'react-router';
   }
 
   renderInput(field) {
-    return <input type="text" placeholder='Search DailySmarty' {...field.input} />
+    return <input type="text" placeholder='&#xf002; Search DailySmarty' {...field.input} />
   }
 
   render() {
@@ -22,8 +23,8 @@ import { withRouter } from 'react-router';
     <form className='seach-bar' onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
       <div className='search-bar-wrapper'>
       <Field name='query' component={this.renderInput}/>
+
         <p>Press enter to search</p>
-      
       </div>
     </form>
     );
