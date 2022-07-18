@@ -47,6 +47,22 @@ grid-row-gap: 44px;
     }
 
     .result-post__links {
+        // display: flex;
+    }
+}
 
+.post-link {
+    display: flex;
+    min-height: 70px;
+    .post-link__box {
+        min-width: 70px;
+        background-color: $greythree;
+        margin-right: 16px;
+    }
+
+    .post-link__link a {
+        color: $greyone;
+        font-size: 14px;
+        line-height: 17px;
     }
 }
