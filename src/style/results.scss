@@ -54,6 +54,10 @@ grid-row-gap: 44px;
 .post-link {
     display: flex;
     min-height: 70px;
+    flex-basis: 205px;
+    margin-right: 37px;
+
+
     .post-link__box {
         min-width: 70px;
         background-color: $greythree;
@@ -64,5 +68,18 @@ grid-row-gap: 44px;
         color: $greyone;
         font-size: 14px;
         line-height: 17px;
+        text-decoration: none;
+        transition: 0.5s ease-in-out;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
     }
+}
+
+.no-content {
+    color: $greyone;
+    font-size: 14px;
+    line-height: 17px;
 }
