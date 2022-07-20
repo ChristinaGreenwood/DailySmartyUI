@@ -1,8 +1,7 @@
 .recent-posts {
     display: grid;
     // align-content: center;
-    // justify-items: center;
-    // height: 350px;
+    // justify-items: center; 
 
     .recent-posts__wrapper {
         display: grid;
@@ -17,15 +16,16 @@
             color: $bluemain;
             
         }
+
     
         .recent-posts__posts {
             display: grid;
             color: $deepGrey;
-            grid-template-columns: 1fr 1fr 1fr;
-            justify-content: space-evenly;
             grid-gap: 42px;
-            // align-content: center;
-            // width: 50vw;
+
+            @media screen and (min-width: 700px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
         }
     }
 }
